@@ -275,35 +275,11 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 
 
-@media (max-width: 768px) {
-
-/* Menú */
-.menu__header{
-    width: 100%;
-}
+@media only screen and (max-width: 768px) and (min-width: 0px){
 .menu__list__item{
     display: none;
 }
-.academic__courses__box{
-    width: 30%;
-}
-.experiencie__box{
-    flex-direction: column;
-    gap: 5px;
-    padding: 1rem;
-    width: 100%;
-}
-.experience__info-container{
-    padding-top: unset;
-}
-/*Contacto*/
-.formcontato--esquerda{
-    display: none;
-}
-}
-
-@media only screen and (max-width: 600px) and (min-width: 413px){
-    .title__div{
+.title__div{
     flex-direction: column;
 }
 .title__bio{
@@ -316,6 +292,7 @@ Utiliza las referencias de los breakpoints @media abajo */
     flex-wrap: wrap;
 
 }
+
 .skills__box{
     width: 40%;
 }
@@ -332,7 +309,18 @@ Utiliza las referencias de los breakpoints @media abajo */
 .academic__courses__box{
     width: 80%;
 }
+.experiencie__box{
+    flex-direction: column;
+    padding: 2rem;
+    gap: 6px;
+}
 
+.experience__info-container{
+    padding-top: unset
+}
+.formcontato--esquerda{
+    display: none;
+}
 .formcontato__text{
     width: 90%;
 }
@@ -347,7 +335,7 @@ Utiliza las referencias de los breakpoints @media abajo */
 }
 }
 
-@media (max-width: 412px){
+@media only screen and (max-width: 1024px) and (min-width: 769px){
 .title__div{
     flex-direction: column;
 }
